@@ -1,0 +1,24 @@
+.cursor {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(230, 87, 62);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.pulse {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: pulsing 1s ease-out infinite;
+}
+
+@keyframes pulsing {
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
